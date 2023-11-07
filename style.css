@@ -65,6 +65,13 @@ main h1 {
 
 .buttons {
   display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.buttons > div {
+  display: flex;
   gap: 1.2rem;
   margin-top: 0.8rem;
 }
@@ -72,7 +79,9 @@ main h1 {
 .buttons button {
   background-color: var(--color-primay);
   border: none;
-  padding: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -128,4 +137,52 @@ footer {
   background-color: #387e96;
   color: #ffff;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas:
+      "header header header" "main main aside"
+      "main main aside" "footer footer footer";
+  }
+
+  .page {
+    display: flex;
+    padding-inline: 10rem;
+  }
+
+  header {
+    grid-area: header;
+    padding-inline: 10rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  main {
+    grid-area: main;
+    margin-top: 4.4rem;
+  }
+
+  .buttons > div {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  aside {
+    grid-area: aside;
+    margin-top: 4.4rem;
+    margin-left: 3rem;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
