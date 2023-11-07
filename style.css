@@ -28,7 +28,7 @@ header {
 }
 
 .container {
-  max-width: 38rem;
+  padding: 1.2rem;
 }
 
 main img {
