@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-text: #121214;
+  --color-title: #202024;
+  --color-primay: #065e7c;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  background-color: #f4fcff;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--color-primay);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2.8rem;
+}
+
+.container {
+  max-width: 38rem;
+}
+
+main img {
+  width: 100%;
+}
+
+main h1 {
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.buttons button {
+  background-color: var(--color-primay);
+  border: none;
+  padding: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main p {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-top: 3rem;
+}
+
+aside {
+  margin-top: 3.4rem;
+  margin-bottom: 4rem;
+}
+
+ul {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  max-height: 8.4rem;
+  box-sizing: content-box;
+}
+
+ul li img {
+  object-fit: cover;
+  /* width: 100%;
+  height: 100%; */
+}
+
+ul li div {
+  width: 21.5rem;
+  overflow: hidden;
+}
+
+ul li p {
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  /* line-height: 1.6; */
+}
+
+footer {
+  padding: 1.6rem 2.6rem;
+  text-align: center;
+  background-color: #387e96;
+  color: #ffff;
+  font-weight: 600;
+}
